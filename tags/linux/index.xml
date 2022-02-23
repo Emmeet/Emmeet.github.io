@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Linux on Joe&#39;s blog</title>
+    <link>https://emmeet.github.io/tags/linux/</link>
+    <description>Recent content in Linux on Joe&#39;s blog</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <lastBuildDate>Wed, 23 Feb 2022 00:00:00 +0000</lastBuildDate><atom:link href="https://emmeet.github.io/tags/linux/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Through acme.sh create HTTPS certificate and use nginx configuration</title>
+      <link>https://emmeet.github.io/post/%E4%BD%BF%E7%94%A8acme.sh%E5%88%9B%E5%BB%BAhttps%E8%AF%81%E4%B9%A6%E5%B9%B6%E9%85%8D%E5%90%88nginx/</link>
+      <pubDate>Wed, 23 Feb 2022 00:00:00 +0000</pubDate>
+      
+      <guid>https://emmeet.github.io/post/%E4%BD%BF%E7%94%A8acme.sh%E5%88%9B%E5%BB%BAhttps%E8%AF%81%E4%B9%A6%E5%B9%B6%E9%85%8D%E5%90%88nginx/</guid>
+      <description>自动配置支持的域名服务商 https://github.com/acmesh-official/acme.sh/wiki/dnsapi
+自动配置方式 export CF_Key=&amp;#34;6fb7308ff0f5f59f31e67490764437cbae699&amp;#34; export CF_Email=&amp;#34;air@linzhe.com&amp;#34; 执行
+acme.sh --issue --dns dns_cf -d hotelavish.com -d *.hotelavish.com --yes-I-know-dns-manual-mode-enough-go-ahead-please --force 1、安装 使用如下命令安装
+curl https://get.acme.sh | sh 会安装到 /~/.acme.sh/ 目录下，以后所有的配置默认也在这个目录下
+设置 alias:
+alias acme.sh=~/.acme.sh/acme.sh # .bashrc or .zshrc or .config/fish/fish. 2、使用域名添加TXT记录方式设置 执行命令：
+acme.sh --issue --dns -d example.com -d *.example.com \ 	--yes-I-know-dns-manual-mode-enough-go-ahead-please 后面加上手动设置同意标识，泛域名设置需要带着根域名；
+命令执行完成之后，会生成相应的解析记录，如下：
+Multi domain=&amp;#39;DNS:bitcat.cc,DNS:*.example.com&amp;#39; Getting domain auth token for each domain Getting webroot for domain=&amp;#39;example.com&amp;#39; Getting webroot for domain=&amp;#39;*.example.com&amp;#39; Add the following TXT record: Domain: &amp;#39;_acme-challenge.</description>
+    </item>
+    
+  </channel>
+</rss>
