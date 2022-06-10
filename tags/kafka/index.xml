@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Kafka on Joe&#39;s blog</title>
+    <link>https://emmeet.github.io/tags/kafka/</link>
+    <description>Recent content in Kafka on Joe&#39;s blog</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <lastBuildDate>Fri, 10 Jun 2022 00:00:00 +0000</lastBuildDate><atom:link href="https://emmeet.github.io/tags/kafka/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>单机模式kafka部署</title>
+      <link>https://emmeet.github.io/post/%E5%8D%95%E6%9C%BAkafka%E9%83%A8%E7%BD%B2/</link>
+      <pubDate>Fri, 10 Jun 2022 00:00:00 +0000</pubDate>
+      
+      <guid>https://emmeet.github.io/post/%E5%8D%95%E6%9C%BAkafka%E9%83%A8%E7%BD%B2/</guid>
+      <description>Kafka下载地址 https://kafka.apache.org/downloads
+1、安装 选择版本，下载tgz压缩文件，解压到任意目录下
+2、配置 进入config目录下，仅需要调整一处配置
+advertised.listeners=PLAINTEXT://xxx.xx.xxx.xx:9092替换为自己的服务IP地址，服务通过此地址连接Kafka
+3、相关命令 所有命令均在Kafka根目录下执行
+启动Zookeeper：
+nohup bin/zookeeper-server-start.sh config/zookeeper.properties &amp;gt;&amp;gt; zookeeper.log &amp;amp;启动Kafka：
+nohup bin/kafka-server-start.sh config/server.properties &amp;gt;&amp;gt; kafka.log &amp;amp;创建新队列：
+bin/kafka-topics.sh --create --topic NAME --partitions 1 --replication-factor 1 --bootstrap-server localhost:9092查看队列列表：
+bin/kafka-topics.sh --list --bootstrap-server localhost:9092查看消费情况：
+bin/kafka-consumer-groups.sh --bootstrap-server xx.xxx.xxx.xxx:9092 --describe --group kafka.topic.kafka-groupIdPs：LOG-END-OFFSET-消息总数量 CURRENT-OFFSET-已消费数量 LAG-偏移量
+清除队列以及消息：
+bin/kafka-topics.sh --delete --topic --bootstrap-server xx.xxx.xxx.xxx:9092</description>
+    </item>
+    
+  </channel>
+</rss>

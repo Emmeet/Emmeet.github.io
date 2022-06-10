@@ -2,17 +2,38 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Linux on Joe&#39;s blog</title>
-    <link>https://Emmeet.github.io/tags/linux/</link>
+    <link>https://emmeet.github.io/tags/linux/</link>
     <description>Recent content in Linux on Joe&#39;s blog</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Wed, 23 Feb 2022 00:00:00 +0000</lastBuildDate><atom:link href="https://Emmeet.github.io/tags/linux/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Fri, 10 Jun 2022 00:00:00 +0000</lastBuildDate><atom:link href="https://emmeet.github.io/tags/linux/index.xml" rel="self" type="application/rss+xml" />
     <item>
-      <title>Through acme.sh create HTTPS certificate and use nginx configuration</title>
-      <link>https://Emmeet.github.io/post/%E4%BD%BF%E7%94%A8acme.sh%E5%88%9B%E5%BB%BAhttps%E8%AF%81%E4%B9%A6%E5%B9%B6%E9%85%8D%E5%90%88nginx/</link>
+      <title>单机模式kafka部署</title>
+      <link>https://emmeet.github.io/post/%E5%8D%95%E6%9C%BAkafka%E9%83%A8%E7%BD%B2/</link>
+      <pubDate>Fri, 10 Jun 2022 00:00:00 +0000</pubDate>
+      
+      <guid>https://emmeet.github.io/post/%E5%8D%95%E6%9C%BAkafka%E9%83%A8%E7%BD%B2/</guid>
+      <description>Kafka下载地址 https://kafka.apache.org/downloads
+1、安装 选择版本，下载tgz压缩文件，解压到任意目录下
+2、配置 进入config目录下，仅需要调整一处配置
+advertised.listeners=PLAINTEXT://xxx.xx.xxx.xx:9092替换为自己的服务IP地址，服务通过此地址连接Kafka
+3、相关命令 所有命令均在Kafka根目录下执行
+启动Zookeeper：
+nohup bin/zookeeper-server-start.sh config/zookeeper.properties &amp;gt;&amp;gt; zookeeper.log &amp;amp;启动Kafka：
+nohup bin/kafka-server-start.sh config/server.properties &amp;gt;&amp;gt; kafka.log &amp;amp;创建新队列：
+bin/kafka-topics.sh --create --topic NAME --partitions 1 --replication-factor 1 --bootstrap-server localhost:9092查看队列列表：
+bin/kafka-topics.sh --list --bootstrap-server localhost:9092查看消费情况：
+bin/kafka-consumer-groups.sh --bootstrap-server xx.xxx.xxx.xxx:9092 --describe --group kafka.topic.kafka-groupIdPs：LOG-END-OFFSET-消息总数量 CURRENT-OFFSET-已消费数量 LAG-偏移量
+清除队列以及消息：
+bin/kafka-topics.sh --delete --topic --bootstrap-server xx.xxx.xxx.xxx:9092</description>
+    </item>
+    
+    <item>
+      <title>使用acme.sh脚本生成免费https证书</title>
+      <link>https://emmeet.github.io/post/%E4%BD%BF%E7%94%A8acme.sh%E5%88%9B%E5%BB%BAhttps%E8%AF%81%E4%B9%A6%E5%B9%B6%E9%85%8D%E5%90%88nginx/</link>
       <pubDate>Wed, 23 Feb 2022 00:00:00 +0000</pubDate>
       
-      <guid>https://Emmeet.github.io/post/%E4%BD%BF%E7%94%A8acme.sh%E5%88%9B%E5%BB%BAhttps%E8%AF%81%E4%B9%A6%E5%B9%B6%E9%85%8D%E5%90%88nginx/</guid>
+      <guid>https://emmeet.github.io/post/%E4%BD%BF%E7%94%A8acme.sh%E5%88%9B%E5%BB%BAhttps%E8%AF%81%E4%B9%A6%E5%B9%B6%E9%85%8D%E5%90%88nginx/</guid>
       <description>自动配置支持的域名服务商 https://github.com/acmesh-official/acme.sh/wiki/dnsapi
 自动配置方式 export CF_Key=&amp;#34;6fb7308ff0f5f59f31e67490764437cbae699&amp;#34; export CF_Email=&amp;#34;air@linzhe.com&amp;#34; 执行
 acme.sh --issue --dns dns_cf -d hotelavish.com -d *.hotelavish.com --yes-I-know-dns-manual-mode-enough-go-ahead-please --force 1、安装 使用如下命令安装
