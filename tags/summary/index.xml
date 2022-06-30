@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Summary on Joe&#39;s blog</title>
+    <link>https://emmeet.github.io/tags/summary/</link>
+    <description>Recent content in Summary on Joe&#39;s blog</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <lastBuildDate>Thu, 30 Jun 2022 00:00:00 +0000</lastBuildDate><atom:link href="https://emmeet.github.io/tags/summary/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>工具以及辅助性文章汇总</title>
+      <link>https://emmeet.github.io/post/%E5%B7%A5%E5%85%B7%E4%BB%A5%E5%8F%8A%E8%BE%85%E5%8A%A9%E6%80%A7%E6%96%87%E7%AB%A0%E6%B1%87%E6%80%BB/</link>
+      <pubDate>Thu, 30 Jun 2022 00:00:00 +0000</pubDate>
+      
+      <guid>https://emmeet.github.io/post/%E5%B7%A5%E5%85%B7%E4%BB%A5%E5%8F%8A%E8%BE%85%E5%8A%A9%E6%80%A7%E6%96%87%E7%AB%A0%E6%B1%87%E6%80%BB/</guid>
+      <description>  使用easyExcel后台生成多个sheet的excel并上传到OSS
+https://blog.csdn.net/hunagzheng123456/article/details/108378659
+  浏览器调用Java下载云对象存储文件，弹出下载窗口
+https://blog.csdn.net/pxg943055021/article/details/124690096
+  </description>
+    </item>
+    
+  </channel>
+</rss>

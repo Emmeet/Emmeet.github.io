@@ -6,7 +6,20 @@
     <description>Recent content on Joe&#39;s blog</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Fri, 10 Jun 2022 00:00:00 +0000</lastBuildDate><atom:link href="https://emmeet.github.io/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Thu, 30 Jun 2022 00:00:00 +0000</lastBuildDate><atom:link href="https://emmeet.github.io/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>工具以及辅助性文章汇总</title>
+      <link>https://emmeet.github.io/post/%E5%B7%A5%E5%85%B7%E4%BB%A5%E5%8F%8A%E8%BE%85%E5%8A%A9%E6%80%A7%E6%96%87%E7%AB%A0%E6%B1%87%E6%80%BB/</link>
+      <pubDate>Thu, 30 Jun 2022 00:00:00 +0000</pubDate>
+      
+      <guid>https://emmeet.github.io/post/%E5%B7%A5%E5%85%B7%E4%BB%A5%E5%8F%8A%E8%BE%85%E5%8A%A9%E6%80%A7%E6%96%87%E7%AB%A0%E6%B1%87%E6%80%BB/</guid>
+      <description>  使用easyExcel后台生成多个sheet的excel并上传到OSS
+https://blog.csdn.net/hunagzheng123456/article/details/108378659
+  浏览器调用Java下载云对象存储文件，弹出下载窗口
+https://blog.csdn.net/pxg943055021/article/details/124690096
+  </description>
+    </item>
+    
     <item>
       <title>单机模式kafka部署</title>
       <link>https://emmeet.github.io/post/%E5%8D%95%E6%9C%BAkafka%E9%83%A8%E7%BD%B2/</link>
@@ -43,21 +56,6 @@ alias acme.sh=~/.acme.sh/acme.sh # .bashrc or .zshrc or .config/fish/fish. 2、�
 acme.sh --issue --dns -d example.com -d *.example.com \ 	--yes-I-know-dns-manual-mode-enough-go-ahead-please 后面加上手动设置同意标识，泛域名设置需要带着根域名；
 命令执行完成之后，会生成相应的解析记录，如下：
 Multi domain=&amp;#39;DNS:bitcat.cc,DNS:*.example.com&amp;#39; Getting domain auth token for each domain Getting webroot for domain=&amp;#39;example.com&amp;#39; Getting webroot for domain=&amp;#39;*.example.com&amp;#39; Add the following TXT record: Domain: &amp;#39;_acme-challenge.</description>
-    </item>
-    
-    <item>
-      <title></title>
-      <link>https://emmeet.github.io/post/%E5%B7%A5%E5%85%B7%E6%96%87%E7%AB%A0%E6%B1%87%E6%80%BB/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      
-      <guid>https://emmeet.github.io/post/%E5%B7%A5%E5%85%B7%E6%96%87%E7%AB%A0%E6%B1%87%E6%80%BB/</guid>
-      <description>author = &amp;ldquo;Joe&amp;rdquo; tags = [&amp;ldquo;Tools&amp;rdquo;,&amp;ldquo;Summary&amp;rdquo;] comments = true date = &amp;ldquo;2022-06-30&amp;rdquo; draft = false image = &amp;quot;&amp;quot; menu = &amp;quot;&amp;quot; share = false slug = &amp;quot;&amp;quot; title= &amp;ldquo;工具以及辅助性文章汇总&amp;rdquo; description=&amp;ldquo;收藏平时对代码有帮助的文章地址&amp;rdquo;
-+++
-  使用easyExcel后台生成多个sheet的excel并上传到OSS
-https://blog.csdn.net/hunagzheng123456/article/details/108378659
-  浏览器调用Java下载云对象存储文件，弹出下载窗口
-https://blog.csdn.net/pxg943055021/article/details/124690096
-  </description>
     </item>
     
   </channel>
