@@ -13,11 +13,7 @@
       <pubDate>Thu, 30 Jun 2022 00:00:00 +0000</pubDate>
       
       <guid>https://emmeet.github.io/post/%E5%B7%A5%E5%85%B7%E4%BB%A5%E5%8F%8A%E8%BE%85%E5%8A%A9%E6%80%A7%E6%96%87%E7%AB%A0%E6%B1%87%E6%80%BB/</guid>
-      <description>  使用easyExcel后台生成多个sheet的excel并上传到OSS
-https://blog.csdn.net/hunagzheng123456/article/details/108378659
-  浏览器调用Java下载云对象存储文件，弹出下载窗口
-https://blog.csdn.net/pxg943055021/article/details/124690096
-  </description>
+      <description> 使用easyExcel后台生成多个sheet的excel并上传到OSS 浏览器调用Java下载云对象存储文件，弹出下载窗口 SpringBoot邮件发送 SpringBoot WebSocket SpringBoot新版本接口文档报错处理  </description>
     </item>
     
     <item>
